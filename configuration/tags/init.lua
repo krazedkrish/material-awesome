@@ -1,51 +1,5 @@
 local awful = require('awful')
-local gears = require('gears')
-local icons = require('theme.icons')
-
-local tags = {
-  {
-    icon = icons.chrome,
-    type = 'chrome',
-    defaultApp = 'google-chrome-beta',
-    screen = 1
-  },
-  {
-    icon = icons.code,
-    type = 'code',
-    defaultApp = 'code',
-    screen = 1
-  },
-  {
-    icon = icons.social,
-    type = 'social',
-    defaultApp = 'station',
-    screen = 1
-  },
-  {
-    icon = icons.folder,
-    type = 'files',
-    defaultApp = 'nautilus',
-    screen = 1
-  },
-  {
-    icon = icons.music,
-    type = 'music',
-    defaultApp = 'youtube-music',
-    screen = 1
-  },
-  {
-    icon = icons.game,
-    type = 'game',
-    defaultApp = '',
-    screen = 1
-  },
-  {
-    icon = icons.lab,
-    type = 'any',
-    defaultApp = '',
-    screen = 1
-  }
-}
+local tags = require('configuration.tags.tags')
 
 awful.layout.layouts = {
   awful.layout.suit.tile,

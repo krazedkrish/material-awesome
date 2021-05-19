@@ -2,6 +2,7 @@ local awful = require('awful')
 local gears = require('gears')
 local client_keys = require('configuration.client.keys')
 local client_buttons = require('configuration.client.buttons')
+local tags = require('configuration.tags.tags')
 
 -- Rules
 awful.rules.rules = {

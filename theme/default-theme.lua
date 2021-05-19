@@ -26,6 +26,8 @@ local awesome_overrides =
   theme.icons = theme.dir .. '/icons/'
   --theme.wallpaper = theme.dir .. '/wallpapers/pro-dark-shadow.png'
   theme.wallpaper = '#e0e0e0'
+
+  --theme.wallpaper = theme.dir .. '/wallpaper.jpg'
   theme.font = 'Roboto medium 10'
   theme.title_font = 'Roboto medium 14'
 
@@ -64,6 +66,10 @@ local awesome_overrides =
 
   theme.layout_max = theme.icons .. 'layouts/arrow-expand-all.png'
   theme.layout_tile = theme.icons .. 'layouts/view-quilt.png'
+  theme.layout_tilebottom = theme.icons .. 'layouts/tilebottom.png'
+  theme.layout_dwindle = theme.icons .. 'layouts/dwindle.png'
+  theme.layout_magnifier = theme.icons .. 'layouts/magnifier.png'
+  theme.layout_floating   = theme.icons .. 'layouts/floating.png'
 
   -- Taglist
 
