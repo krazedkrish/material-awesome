@@ -5,15 +5,15 @@ local top_panel = require('layout.top-panel')
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(
   function(s)
-    if s.index == 1 then
+    -- if s.index == 1 then
       -- Create the left_panel
       s.left_panel = left_panel(s)
       -- Create the Top bar
       s.top_panel = top_panel(s, true)
-    else
-      -- Create the Top bar
-      s.top_panel = top_panel(s, false)
-    end
+    -- else
+    --   -- Create the Top bar
+    --   s.top_panel = top_panel(s, false)
+    -- end
   end
 )
 
@@ -41,7 +41,9 @@ _G.tag.connect_signal(
 _G.client.connect_signal(
   'property::fullscreen',
   function(c)
+    if c.first_tag ~= nil then
     c.first_tag.fullscreenMode = c.fullscreen
+    end
     updateBarsVisibility()
   end
 )
