@@ -111,6 +111,8 @@ awful.rules.rules = {
     properties = { screen = 1, tag = "8" } },
   { rule = { class = "xpad" },
     properties = { screen = 1, tag = "9", floating = true, sticky = true } },
+  { rule = { class = "Gnome-pomodoro" },
+    properties = { screen = 1, tag = "9", floating = true, sticky = true } },
   { rule = { class = "Tasque" },
     properties = { screen = 1, tag = "9" } },
   { rule = { instance = "Whisker Menu" },

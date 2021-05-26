@@ -8,6 +8,7 @@ local clientKeys =
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
+    awful.key({ modkey, "Control" }, "s",      function (c) c.sticky = not c.sticky          end),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
     awful.key({ modkey, "Shift"   }, "o",      function (c) c:move_to_screen()               end),
     -- awful.key({ modkey, "Shift"   }, "o", function () awful.screen.focus_relative( 1) end),
